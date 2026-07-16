@@ -13,4 +13,4 @@ dynamic = ["version"]
 test = ["pytest"]
 
 [tool.hatch]
-versoin.path = "src/my_test_bep/__init__.py"
+version.path = "src/my_test_bep/__init__.py"
