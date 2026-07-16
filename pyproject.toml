@@ -1,0 +1,13 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my_test_bep"
+version = "v0.1.0"
+dependencies = ["numpy"]
+readme = "README.md"
+
+[project.optional-dependencies]
+test = ["pytest"]
