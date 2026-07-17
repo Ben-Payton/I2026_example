@@ -6,3 +6,18 @@ jobs:
     steps:
       - name: Greeting!
         run: echo hello world
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v5
+        with:
+        python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[test]"
+      - name: Test with pytest
+        run: pytest 
