@@ -7,7 +7,6 @@ jobs:
       - name: Greeting!
         run: echo hello world
 
-jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
